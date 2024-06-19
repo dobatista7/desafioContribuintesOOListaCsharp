@@ -23,6 +23,54 @@ namespace desafioContribuintesOOListaCsharp
             EducationSpending = educationSpending;
         }
 
+        public double SalaryTax()
+        {
+            double monthlySalary = SalaryIncome / 12;
+            if (monthlySalary < 3000)
+            {
+                return 0.0;
+            }
+            else
+            {
+                 if (monthlySalary < 5000.00)
+                {
+                    return SalaryIncome * 0.10;
+                }
+                else
+                {
+                    return SalaryIncome * 0.20;
+                }
+            }
+        }
+
+        public double ServiceTax()
+        {
+            return ServiceIncome * 0.15;
+        }
+
+        public double CapitalTax()
+        {
+            return CapitalIncome * 0.20;
+        }
+
+        public double GrossTax() 
+        {
+            return SalaryTax() + ServiceTax() + CapitalTax();
+
+        }
+
+        public double TaxRebate()
+        {
+            double maxRebate = GrossTax() * 0.30;
+            double actualRebate = HealthSpeding + EducationSpending;
+            return Math.Min(actualRebate, maxRebate);
+        }
+
+        public double NetTax()
+        {
+            return GrossTax() - TaxRebate();
+        }
+
 
     }
 }
