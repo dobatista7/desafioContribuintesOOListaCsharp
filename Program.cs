@@ -37,6 +37,15 @@ namespace desafioContribuintesOOListaCsharp
 
             }
 
+            for (int i = 0; i < taxPayers.Count; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Resumo do {i+1} o contribuinte: ");
+                Console.WriteLine($"Imposto bruto total: {taxPayers[i].GrossTax().ToString("F2", CultureInfo.InvariantCulture)}");
+                Console.WriteLine($"Abatimento: {taxPayers[i].TaxRebate().ToString("F2", CultureInfo.InvariantCulture)}");
+                Console.WriteLine($"Imposto devido: {taxPayers[i].NetTax().ToString("F2", CultureInfo.InvariantCulture)}");
+            }
+
         }
     }
 }
