@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desafioContribuintesOOListaCsharp", "desafioContribuintesOOListaCsharp.csproj", "{90366238-D953-4E25-84B0-C208871D1DE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90366238-D953-4E25-84B0-C208871D1DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90366238-D953-4E25-84B0-C208871D1DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90366238-D953-4E25-84B0-C208871D1DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90366238-D953-4E25-84B0-C208871D1DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {735BD029-610D-4232-B230-25903DABB3D8}
+	EndGlobalSection
+EndGlobal
